@@ -1,0 +1,19 @@
+{
+
+  "description": "Turn on Experimental Night Mode on dev.to and calm your eyes",
+  "manifest_version": 2,
+  "name": "DEVNight",
+  "version": "1.0",
+  "homepage_url": "https://github.com/bauripalash/devnight",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.dev.to/*"],
+      "js": ["devnight.js"]
+    }
+  ]
+
+}
